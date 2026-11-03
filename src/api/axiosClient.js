@@ -11,7 +11,7 @@ export const requestsClient = axios.create({ baseURL: API_GATEWAY_URL, headers: 
 export const reportClient = axios.create({ baseURL: API_GATEWAY_URL, headers: { 'Content-Type': 'application/json' } });
 
 // Ámbito (scope) personalizado de la API expuesta en Azure Entra ID
-const API_SCOPE = ["api://95f77a04-372f-4892-ac61-3645256190af/access_as_user"];
+const API_SCOPE = ["api://75b2737f-ad39-4105-8071-b600a0dd3133/access_as_user"];
 
 // Interceptor global para inyectar Token Bearer MSAL
 export const setupAxiosInterceptors = (msalInstance) => {
