@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // URL de invocación de tu AWS HTTP API Gateway
-const API_GATEWAY_URL = import.meta.env.VITE_API_BASE_URL || 'https://jrob2doi1b.execute-api.us-east-1.amazonaws.com';
+const API_GATEWAY_URL = import.meta.env.VITE_API_BASE_URL || 'https://uxnhf4htt7.execute-api.us-east-1.amazonaws.com';
 
 // Instancias base
 export const axiosClient = axios.create({ baseURL: API_GATEWAY_URL, headers: { 'Content-Type': 'application/json' } });
